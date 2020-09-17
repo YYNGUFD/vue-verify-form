@@ -39,22 +39,25 @@ export default {
 ##### 表单操作事件状态
 * 失去焦点进行校验
 
-```
+```jsx static
     <input type="text" v-valid.blur="'mobile'" v-model="data2" id="alpha" placeholder="请输入手机号">
    
 ```
 
 * 值更改时候进行校验
-```
+
+```jsx static
     <input type="text" v-valid.change="'pwd'" v-model="data2" id="alpha" placeholder="请输入手机号">
 ```
 * 键盘弹起进行更改
-```
+
+```jsx static
     <input type="text" v-valid.keyup="'pwd'" v-model="data2" id="alpha" placeholder="请输入手机号">
 ```
 ##### 自定义内容
 * 设置回调验证函数
-```
+
+```jsx static
  <input type="text" v-valid.keyup="{type:'mobile',completed:completed}" v-model="data2" id="alpha" placeholder="请输入手机号">
  export default{
      methods:{
@@ -67,24 +70,23 @@ export default {
 ```
 * 设置自定义正则校验
 
-```
-     <input type="text" v-valid.input="{type:'pwd',reg:/[^\d]/g}" placeholder="自定义正则内容输入">
-   
+```jsx 
+     <input type="text" v-valid.input="{type:'pwd',reg:/[^\d]/g}" placeholder="自定义正则内容输入"> 
 ```
 即使设置了type,但是正则的校验还是按照当前传入的为准，正则reg会优先被使用
 
 * 设置外界的提示选择器
 
-```
+```jsx static
     <input type="text"  v-model="data4" v-my-valid.blur="{type:'mobile',errorClass:'.error-msg',errorMsg:'手机号输入错误'}" placeholder="请输入手机号">
-       <div class="error-msg"></div>
+    <div class="error-msg"></div>
    
 ```
 
 
 ## 参数配置
 ### 可监听的表单操作类型
-```
+```jsx static
 change 
 input  
 blur  
@@ -99,7 +101,7 @@ select
 ---|---| ---| ---| 
 type | string | 要进行输入表单类型 |见下表
 
-```
+``` jsx static
    <input type="text" v-valid.input="'isNumber'" v-model="data1" placeholder="请输入数字">
 ``` 
 -   pwd:密码, 
