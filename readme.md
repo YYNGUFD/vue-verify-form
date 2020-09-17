@@ -40,7 +40,6 @@ export default {
 
 ```jsx static
     <input type="text" v-valid.blur="'mobile'" v-model="data2" id="alpha" placeholder="请输入手机号">
-   
 ```
 
 * 值更改时候进行校验
@@ -79,7 +78,6 @@ export default {
 ```jsx static
     <input type="text"  v-model="data4" v-my-valid.blur="{type:'mobile',errorClass:'.error-msg',errorMsg:'手机号输入错误'}" placeholder="请输入手机号">
     <div class="error-msg"></div>
-   
 ```
 
 
@@ -125,6 +123,4 @@ completed |Function| 触发操作时进行回调 | ()=>{} |
 reg | RegExp | 自定义的校验类型,设置后将使用该值 | 自定义
 errorMsg | String | 校验错误的时候提示信息 | ''
 errorClass | String | 选择器，校验错误的时候渲染结果 | ''
-
-
 

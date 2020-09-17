@@ -30,6 +30,10 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "repository":   {
+    "type": "git",
+    "url": "git+git@github.com:YYNGUFD/vue-verify-form.git"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
