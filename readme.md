@@ -2,7 +2,7 @@
 提供表单输入框进行校验的插件，通过指令的方式绑定到表单元素上
 
 ## 安装
-```
+``` jsx static
 npm i vue-verify-form
 ```
 ## 使用
@@ -10,14 +10,14 @@ npm i vue-verify-form
 ### 引入
 
 #### 全局引入
-```
+```jsx static
 import validator from 'vue-verify-form'
 Vue.use(validator) 
 
 ```
 #### 局部引入使用
 
-```
+```jsx static
 import {valid} from 'vue-verify-form'
 export default { 
    directives:{
@@ -28,12 +28,11 @@ export default {
 ### 使用组件
 ##### 只能输入某类型
 * 只能输入数字
-```
-  <input type="text" v-valid.input="'isNumber'" v-model="data1" id='number' placeholder="请输入数字">
-    
+```jsx static
+  <input type="text" v-valid.input="'isNumber'" v-model="data1" id='number' placeholder="请输入数字">  
 ```
 * 只能输入英文字母
-```
+```jsx static
 <input type="text" v-valid.input="'isAlpha'" v-model="data1" id='number' placeholder="请输入数字">
 ```
 ##### 表单操作事件状态
@@ -86,16 +85,16 @@ export default {
 
 ## 参数配置
 ### 可监听的表单操作类型
-```jsx static
-change 
-input  
-blur  
-focus 
-click  
-keyup  
-keydown 
-select
-```
+ 
+- change 
+- input  
+- blur  
+- focus 
+- click  
+- keyup  
+- keydown 
+- select 
+
 ### 传入指令为字符串时
 参数| 类型 | 参数意义 | 可选值
 ---|---| ---| ---| 
