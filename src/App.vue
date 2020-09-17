@@ -6,6 +6,8 @@
     </div>
     <div class="item">
       <label for="alpha">输入英文 input</label>
+         <input type="text" v-valid.input="{type:'pwd',reg:/[^\d]/g}" placeholder="自定义正则内容输入">
+   
       <input type="text" v-valid.input="'isAlpha'" v-model="data2" id="alpha" placeholder="请输入英文字符">
     </div>
     <div class="item">
