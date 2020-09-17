@@ -1,12 +1,15 @@
 {
   "name": "vue-verify-form",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "vue form表单输入验证框",
-  "main":"dist/vValid.umd.min.js",
-  "keywords": ["vue-verify","verify-form"],
-    "scripts": {
-    "serve": "vue-cli-service serve", 
+  "main": "dist/vValid.umd.min.js",
+  "keywords": [
+    "vue-verify",
+    "verify-form"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service  build --target lib --name vValid ./lib/index.js"
